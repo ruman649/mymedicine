@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Medicina</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- icon from download file -->
+    <link rel="stylesheet" href="./css/themify-icons.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+
+    <section class="nav_section ">
+        <div class="top_section hidden bg-[#10cfdc] px-4 py-1 sm:flex justify-between text-white">
+            <div class="top_left">
+                <span class="ti-mobile"></span>
+                <b class="text-bold">Call- 01744151792</b>
+            </div>
+            <div class="top_right space-x-4">
+                <span class="ti-twitter-alt hover:font-bold hover:text-yellow-200" title="Twitter"></span>
+                <span class="ti-linkedin hover:font-bold hover:text-yellow-200" title="linkedIn"></span>
+                <span class="ti-facebook hover:font-bold hover:text-yellow-200" title="facebook"> </span>
+            </div>
+        </div>
+
+
+        <nav class=" bg-slate-900 h-20 flex justify-between py-5 px-3 items-center">
+            <div class="left_navbar flex justify-between space-x-3 ">
+                <img src="./images/logo.png" alt="logo">
+                <h1 class="text-white font-extrabold text-[24px]">MyMedicina</h1>
+            </div>
+            <div class="right_navbar ">
+                <div class="menuIcon sm:hidden text-white text-2xl ">
+                    <span id="btn" class="ti-view-list-alt" onclick="nav_menu()"></span>
+                </div>
+                <div id="btn_menu"
+                    class="menu_section bg-slate-900 absolute  top-20 left-0 w-full -translate-y-72 sm:static sm:translate-y-0 sm:w-auto duration-700 ">
+                    <ol class="text-center text-white sm:flex">
+                        <li
+                            class="border-y-2 sm:border-y-0 border-slate-800 p-2 text-lg font-semibold hover:bg-slate-800">
+                            <a class="block" href="#home">Home</a>
+                        </li>
+                        <li
+                            class="border-b-2 sm:border-b-0 border-slate-800 p-2 text-lg font-semibold hover:bg-slate-800">
+                            <a class="block" href="#review">Review</a>
+                        </li>
+                        <li
+                            class="border-b-2 sm:border-b-0 border-slate-800 p-2 text-lg font-semibold hover:bg-slate-800">
+                            <a class="block" href="#contract">Contract</a>
+                        </li>
+                        <li
+                            class="border-b-2 sm:border-b-0 border-slate-800 p-2 text-lg font-semibold hover:bg-slate-800">
+                            <a class="block" href="#medicine">Medicine</a>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="hero_section h-auto w-full py-5 sm:flex sm:justify-between sm:items-center"
+            style="background-image: url(./images/hero-bg.jpg);">
+            <div class="left_hero sm:w-5/12 ml-12 ">
+                <img class="" src="./images/medicine.png" alt="">
+            </div>
+            <div class="right_hero sm:w-7/12 ">
+                <div class="">
+                    <div class="right_content text-center sm:m-2 sm:text-left space-y-3">
+                        <h2 class="text-4xl font-bold">Welcome to out </h2>
+                        <h1 class="text-6xl font-bold text-white">Online Hospital</h1>
+                        <p class="text-white font-semibold text-xl px-4">Lorem ipsum dolor sit amet consectetur,
+                            adipisicing
+                            elit. Labore corporis dolor excepturi debitis, et reprehenderit recusandae!</p>
+                        <button
+                            class=" px-6 py-3  font-semibold bg-slate-900 text-white hover:bg-slate-800 duration-200">Buy
+                            Now <span class="ti-arrow-right "></span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="support_section  ">
+        <div class=" my-24 sm:flex sm:space-y-0">
+            <div class=" text-center  mx-auto">
+                <div class="flex flex-col items-center p-6">
+                    <div class="img_container border-2 rounded-md p-5 hover:border-[#0de5f0] hover:text-[#0de5f0]">
+                        <span class="ti-truck text-[90px]"></span>
+                    </div>
+                    <h1 class="text-[30px] font-extrabold">FAST DELIVERY</h1>
+                    <p>It is a long established fact that a reader will be distracted by
+                    </p>
+                </div>
+            </div>
+            <div class=" text-center  mx-auto">
+                <div class="flex flex-col items-center p-6">
+                    <div class="img_container border-2 rounded-md p-5 hover:border-[#0de5f0] hover:text-[#0de5f0]">
+                        <span class="ti-id-badge text-[90px]"></span>
+                    </div>
+                    <h1 class="text-[26px] font-extrabold">LICENSE OF GOVERNMENT</h1>
+                    <p>
+                        It is a long established fact that a reader will be distracted by
+                    </p>
+                </div>
+            </div>
+            <div class=" text-center  mx-auto">
+                <div class="flex flex-col items-center p-6">
+                    <div class="img_container border-2 rounded-md p-5 hover:border-[#0de5f0] hover:text-[#0de5f0]">
+                        <span class="ti-support text-[90px]"></span>
+                    </div>
+                    <h1 class="text-[26px] font-extrabold">SUPPORT24/7</h1>
+                    <p>
+                        It is a long established fact that a reader will be distracted by
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="section_discount">
+        <div class="mb-10 bg-neutral-800 sm:flex sm:items-center">
+            <div class="discount_left text-white px-5 py-20 space-y-4">
+                <h1 class="text-[38px] font-bold text-center">YOU GET ANY MEDICINE ON <span
+                        style="color:#11e6f4">10%</span> DISCOUNT</h1>
+                <p class="text-lg text-center">It is a long established fact that a reader will be distracted by</p>
+                <div class="text-center ">
+                    <button class="bg-[#11e6f4] px-6 py-3 text-lg font-bold hover:bg-[#06a8b3]">Buy Now</button>
+                </div>
+            </div>
+            <div class="discount_right">
+                <div class="img">
+                    <img src="./images/medicines.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="medicine_section py-10">
+        <h1 class="text-4xl font-bold p-5">MEDICINE & HEALTH</h1>
+
+        <div class="card_section sm:mx-5 sm:flex flex-wrap">
+            <div class="card  sm:w-6/12 lg:w-3/12 p-1">
+                <div class="card_body mx-auto  border ">
+                    <div class="buy">
+                        <button class="px-6 py-3 bg-[rgb(52,226,239)] font-bold text-lg hover:bg-[#37c9d3]">Buy
+                            Now</button>
+                    </div>
+                    <div class="img flex justify-center">
+                        <img src="./images/p-1.jpg" alt="">
+                    </div>
+                    <div class="price_rev flex justify-between p-5">
+                        <div class="retting">
+                            <span class="ti-star text-yellow-400 "></span>
+                            <span class="ti-star text-yellow-400 "></span>
+                            <span class="ti-star text-yellow-400 "></span>
+                            <span class="ti-star text-yellow-400 "></span>
+                            <span class="ti-star text-yellow-400 "></span>
+                        </div>
+                        <div class="price ">
+                            <h1 class="font-bold text-lg">HELTH <span class="text-[#11e6f4] text-xl">$</span>40</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card  sm:w-6/12 lg:w-3/12 p-1">
+                <div class="card_body mx-auto  border ">
+                    <div class="buy">
+                        <button class="px-6 py-3 bg-[rgb(52,226,239)] font-bold text-lg hover:bg-[#37c9d3]">Buy
+                            Now</button>
+                    </div>
+                    <div class="img flex justify-center">
+                        <img src="./images/p-6.jpg" alt="">
+                    </div>
+                    <div class="price_rev flex justify-between p-5">
+                        <div class="retting">
+                            <span class="ti-star text-yellow-400 "></span>
+                            <span class="ti-star text-yellow-400 "></span>
+                            <span class="ti-star text-yellow-400 "></span>
+                            <span class="ti-star text-yellow-400 "></span>
+                            <span class="ti-star text-yellow-400 "></span>
+                        </div>
+                        <div class="price ">
+                            <h1 class="font-bold text-lg">HELTH <span class="text-[#11e6f4] text-xl">$</span>40</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card  sm:w-6/12 lg:w-3/12 p-1">
+                <div class="card_body mx-auto  border ">
+                    <div class="buy">
+                        <button class="px-6 py-3 bg-[rgb(52,226,239)] font-bold text-lg hover:bg-[#37c9d3]">Buy
+                            Now</button>
+                    </div>
+                    <div class="img flex justify-center">
+                        <img src="./images/p-1.jpg" alt="">
+                    </div>
+                    <div class="price_rev flex justify-between p-5">
+                        <div class="retting">
+                            <span class="ti-star text-yellow-400 "></span>
+                            <span class="ti-star text-yellow-400 "></span>
+                            <span class="ti-star text-yellow-400 "></span>
+                            <span class="ti-star text-yellow-400 "></span>
+                            <span class="ti-star text-yellow-400 "></span>
+                        </div>
+                        <div class="price ">
+                            <h1 class="font-bold text-lg">HELTH <span class="text-[#11e6f4] text-xl">$</span>40</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card  sm:w-6/12 lg:w-3/12 p-1">
+                <div class="card_body mx-auto  border ">
+                    <div class="buy">
+                        <button class="px-6 py-3 bg-[rgb(52,226,239)] font-bold text-lg hover:bg-[#37c9d3]">Buy
+                            Now</button>
+                    </div>
+                    <div class="img flex justify-center">
+                        <img src="./images/p-4.jpg" alt="">
+                    </div>
+                    <div class="price_rev flex justify-between p-5">
+                        <div class="retting">
+                            <span class="ti-star text-yellow-400 "></span>
+                            <span class="ti-star text-yellow-400 "></span>
+                            <span class="ti-star text-yellow-400 "></span>
+                            <span class="ti-star text-yellow-400 "></span>
+                            <span class="ti-star text-yellow-400 "></span>
+                        </div>
+                        <div class="price ">
+                            <h1 class="font-bold text-lg">HELTH <span class="text-[#11e6f4] text-xl">$</span>40</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card  sm:w-6/12 lg:w-3/12 p-1">
+                <div class="card_body mx-auto  border ">
+                    <div class="buy">
+                        <button class="px-6 py-3 bg-[rgb(52,226,239)] font-bold text-lg hover:bg-[#37c9d3]">Buy
+                            Now</button>
+                    </div>
+                    <div class="img flex justify-center">
+                        <img src="./images/p-5.jpg" alt="">
+                    </div>
+                    <div class="price_rev flex justify-between p-5">
+                        <div class="retting">
+                            <span class="ti-star text-yellow-400 "></span>
+                            <span class="ti-star text-yellow-400 "></span>
+                            <span class="ti-star text-yellow-400 "></span>
+                            <span class="ti-star text-yellow-400 "></span>
+                            <span class="ti-star text-yellow-400 "></span>
+                        </div>
+                        <div class="price ">
+                            <h1 class="font-bold text-lg">HELTH <span class="text-[#11e6f4] text-xl">$</span>40</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card  sm:w-6/12 lg:w-3/12 p-1">
+                <div class="card_body mx-auto  border ">
+                    <div class="buy">
+                        <button class="px-6 py-3 bg-[rgb(52,226,239)] font-bold text-lg hover:bg-[#37c9d3]">Buy
+                            Now</button>
+                    </div>
+                    <div class="img flex justify-center">
+                        <img src="./images/p-3.jpg" alt="">
+                    </div>
+                    <div class="price_rev flex justify-between p-5">
+                        <div class="retting">
+                            <span class="ti-star text-yellow-400 "></span>
+                            <span class="ti-star text-yellow-400 "></span>
+                            <span class="ti-star text-yellow-400 "></span>
+                            <span class="ti-star text-yellow-400 "></span>
+                            <span class="ti-star text-yellow-400 "></span>
+                        </div>
+                        <div class="price ">
+                            <h1 class="font-bold text-lg">HELTH <span class="text-[#11e6f4] text-xl">$</span>40</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card  sm:w-6/12 lg:w-3/12 p-1">
+                <div class="card_body mx-auto  border ">
+                    <div class="buy">
+                        <button class="px-6 py-3 bg-[rgb(52,226,239)] font-bold text-lg hover:bg-[#37c9d3]">Buy
+                            Now</button>
+                    </div>
+                    <div class="img flex justify-center">
+                        <img src="./images/p-1.jpg" alt="">
+                    </div>
+                    <div class="price_rev flex justify-between p-5">
+                        <div class="retting">
+                            <span class="ti-star text-yellow-400 "></span>
+                            <span class="ti-star text-yellow-400 "></span>
+                            <span class="ti-star text-yellow-400 "></span>
+                            <span class="ti-star text-yellow-400 "></span>
+                            <span class="ti-star text-yellow-400 "></span>
+                        </div>
+                        <div class="price ">
+                            <h1 class="font-bold text-lg">HELTH <span class="text-[#11e6f4] text-xl">$</span>40</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card  sm:w-6/12 lg:w-3/12 p-1">
+                <div class="card_body mx-auto  border ">
+                    <div class="buy">
+                        <button class="px-6 py-3 bg-[rgb(52,226,239)] font-bold text-lg hover:bg-[#37c9d3]">Buy
+                            Now</button>
+                    </div>
+                    <div class="img flex justify-center">
+                        <img src="./images/p-6.jpg" alt="">
+                    </div>
+                    <div class="price_rev flex justify-between p-5">
+                        <div class="retting">
+                            <span class="ti-star text-yellow-400 "></span>
+                            <span class="ti-star text-yellow-400 "></span>
+                            <span class="ti-star text-yellow-400 "></span>
+                            <span class="ti-star text-yellow-400 "></span>
+                            <span class="ti-star text-yellow-400 "></span>
+                        </div>
+                        <div class="price ">
+                            <h1 class="font-bold text-lg">HELTH <span class="text-[#11e6f4] text-xl">$</span>40</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card  sm:w-6/12 lg:w-3/12 p-1">
+                <div class="card_body mx-auto  border ">
+                    <div class="buy">
+                        <button class="px-6 py-3 bg-[rgb(52,226,239)] font-bold text-lg hover:bg-[#37c9d3]">Buy
+                            Now</button>
+                    </div>
+                    <div class="img flex justify-center">
+                        <img src="./images/p-2.jpg" alt="">
+                    </div>
+                    <div class="price_rev flex justify-between p-5">
+                        <div class="retting">
+                            <span class="ti-star text-yellow-400 "></span>
+                            <span class="ti-star text-yellow-400 "></span>
+                            <span class="ti-star text-yellow-400 "></span>
+                            <span class="ti-star text-yellow-400 "></span>
+                            <span class="ti-star text-yellow-400 "></span>
+                        </div>
+                        <div class="price ">
+                            <h1 class="font-bold text-lg">HELTH <span class="text-[#11e6f4] text-xl">$</span>40</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="text-center">
+            <button class="px-5 py-3 font-bold text-lg bg-slate-800 hover:bg-gray-900 my-5 text-white">See More</button>
+        </div>
+        <hr>
+    </div>
+
+    <!-- VITAMINS & SUPPLEMENTS -->
+    <div class="section_vitamine">
+        <h1 class="text-4xl font-bold m-5">VITAMINS & SUPPLEMENTS</h1>
+
+        <div class="card_section my-5">
+            <div class="all_card sm:flex flex-wrap">
+
+                <div class="card   sm:w-6/12 lg:w-3/12">
+                    <div class="card_body m-2 border-2">
+                        <div class="buy_bttn">
+                            <button class="px-5 py-3 bg-black text-white hover:bg-gray-900 font-bold">Buy Now</button>
+                        </div>
+                        <div class="img ">
+                            <img class="mx-auto" src="./images/p-2.jpg" alt="">
+                        </div>
+                        <div class="rev_price  flex justify-evenly">
+                            <div class="ratting text-lg font-bold text-yellow-500">
+                                <span class="ti-star"></span>
+                                <span class="ti-star"></span>
+                                <span class="ti-star"></span>
+                                <span class="ti-star"></span>
+                                <span class="ti-star"></span>
+                            </div>
+                            <div class="price">
+                                <h1 class="font-bold text-lg">HELTH <b class="text-[#11e6f4]">$</b>30</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card  sm:w-6/12 lg:w-3/12">
+                    <div class="card_body m-2 border-2">
+                        <div class="buy_bttn">
+                            <button class="px-5 py-3 bg-black text-white hover:bg-gray-900 font-bold">Buy Now</button>
+                        </div>
+                        <div class="img ">
+                            <img class="mx-auto" src="./images/p-2.jpg" alt="">
+                        </div>
+                        <div class="rev_price  flex justify-evenly">
+                            <div class="ratting text-lg font-bold text-yellow-500">
+                                <span class="ti-star"></span>
+                                <span class="ti-star"></span>
+                                <span class="ti-star"></span>
+                                <span class="ti-star"></span>
+                                <span class="ti-star"></span>
+                            </div>
+                            <div class="price">
+                                <h1 class="font-bold text-lg">HELTH <b class="text-[#11e6f4]">$</b>30</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card   sm:w-6/12 lg:w-3/12">
+                    <div class="card_body m-2 border-2">
+                        <div class="buy_bttn">
+                            <button class="px-5 py-3 bg-black text-white hover:bg-gray-900 font-bold">Buy Now</button>
+                        </div>
+                        <div class="img ">
+                            <img class="mx-auto" src="./images/p-2.jpg" alt="">
+                        </div>
+                        <div class="rev_price  flex justify-evenly">
+                            <div class="ratting text-lg font-bold text-yellow-500">
+                                <span class="ti-star"></span>
+                                <span class="ti-star"></span>
+                                <span class="ti-star"></span>
+                                <span class="ti-star"></span>
+                                <span class="ti-star"></span>
+                            </div>
+                            <div class="price">
+                                <h1 class="font-bold text-lg">HELTH <b class="text-[#11e6f4]">$</b>30</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card   sm:w-6/12 lg:w-3/12">
+                    <div class="card_body m-2 border-2">
+                        <div class="buy_bttn">
+                            <button class="px-5 py-3 bg-black text-white hover:bg-gray-900 font-bold">Buy Now</button>
+                        </div>
+                        <div class="img ">
+                            <img class="mx-auto" src="./images/p-1.jpg" alt="">
+                        </div>
+                        <div class="rev_price  flex justify-evenly">
+                            <div class="ratting text-lg font-bold text-yellow-500">
+                                <span class="ti-star"></span>
+                                <span class="ti-star"></span>
+                                <span class="ti-star"></span>
+                                <span class="ti-star"></span>
+                                <span class="ti-star"></span>
+                            </div>
+                            <div class="price">
+                                <h1 class="font-bold text-lg">HELTH <b class="text-[#11e6f4]">$</b>30</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card   sm:w-6/12 lg:w-3/12">
+                    <div class="card_body m-2 border-2">
+                        <div class="buy_bttn">
+                            <button class="px-5 py-3 bg-black text-white hover:bg-gray-900 font-bold">Buy Now</button>
+                        </div>
+                        <div class="img ">
+                            <img class="mx-auto" src="./images/p-4.jpg" alt="">
+                        </div>
+                        <div class="rev_price  flex justify-evenly">
+                            <div class="ratting text-lg font-bold text-yellow-500">
+                                <span class="ti-star"></span>
+                                <span class="ti-star"></span>
+                                <span class="ti-star"></span>
+                                <span class="ti-star"></span>
+                                <span class="ti-star"></span>
+                            </div>
+                            <div class="price">
+                                <h1 class="font-bold text-lg">HELTH <b class="text-[#11e6f4]">$</b>30</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card   sm:w-6/12 lg:w-3/12">
+                    <div class="card_body m-2 border-2">
+                        <div class="buy_bttn">
+                            <button class="px-5 py-3 bg-black text-white hover:bg-gray-900 font-bold">Buy Now</button>
+                        </div>
+                        <div class="img ">
+                            <img class="mx-auto" src="./images/p-1.jpg" alt="">
+                        </div>
+                        <div class="rev_price  flex justify-evenly">
+                            <div class="ratting text-lg font-bold text-yellow-500">
+                                <span class="ti-star"></span>
+                                <span class="ti-star"></span>
+                                <span class="ti-star"></span>
+                                <span class="ti-star"></span>
+                                <span class="ti-star"></span>
+                            </div>
+                            <div class="price">
+                                <h1 class="font-bold text-lg">HELTH <b class="text-[#11e6f4]">$</b>30</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="text-center py-10">
+                <button class="px-5 py-3 bg-black text-white hover:bg-gray-800">See More</button>
+            </div>
+            <hr>
+        </div>
+    </div>
+
+
+    <!-- about section -->
+    <div class="section_about py-10 text-center space-y-16">
+        <h1 class="text-4xl font-semibold ">AB<span class="border-b-4 border-b-[#11e6f4]">OUT</span> US</h1>
+        <img class="mx-auto" src="./images/about-medicine.png" alt="">
+        <p class="px-6 sm:px-32 lg:px-40">It is a long established fact that a reader will be distracted by the readable
+            content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less
+            normal distribution of letters, as opposed to using 'Content here, content here', making it</p>
+        <button class="text-white bg-gray-900 px-7 py-3 hover:bg-gray-800">Read More</button>
+    </div>
+
+
+
+
+    <!-- WHAT IS SAYS OUR CLIENTS -->
+    <div class="clients_rev py-10 space-y-14 text-center ">
+
+        <div class=" w-5/6 mx-auto">
+
+            <div class="">
+                <h1 class="text-3xl font-bold mx-4">WHAT IS SAY<span class="border-b-4 border-b-[#11e6f4]">S O</span>UR
+                    CLIENTS</h1>
+            </div>
+
+            <div class="slide_section ">
+                <div class="comment">
+                    <p class="border-2 p-5 m-4 sm:max-w-xl sm:mx-auto font-serif text-lg ">There are many variations of
+                        passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by
+                        injected humour, or randomised words which don't look even slightly believable.</p>
+                </div>
+                <div class="img">
+                    <img class="mx-auto" src="./images/client.png" alt="">
+                </div>
+                <div class="name space-y-4">
+                    <h1 class="font-semibold text-4xl ">Any Name</h1>
+                    <h4 class="text-2xl italic">Client</h4>
+                    <span class="font-black text-4xl text-[#11e6f4]">"</span>
+                </div>
+                <div class="flex justify-center space-x-5">
+                    <div
+                        class="w-4 h-4 rounded-full ring-4 ring-[#11e6f4] active:ring-0 active:bg-red-500 duration-200">
+                    </div>
+                    <div
+                        class="w-4 h-4 rounded-full ring-4 ring-[#11e6f4] active:ring-0 active:bg-red-500 duration-200">
+                    </div>
+                    <div
+                        class="w-4 h-4 rounded-full ring-4 ring-[#11e6f4] active:ring-0 active:bg-red-500 duration-200">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- section swiper -->
+    <div class="my-10 lg:my-20">
+        <div class=" mx-auto  ">
+            <div style="--swiper-navigation-color: rgb(224, 30, 30); --swiper-pagination-color: red"
+                class="swiper mySwiper h-96 ">
+                <div class="swiper-wrapper ">
+                    <div class="swiper-slide">
+                        <img src="./images/slider/img-1.jpg" class="swiper-lazy w-full pt-8" />
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/slider/img-2.jpg" class="swiper-lazy w-full pt-8" />
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/slider/img-3.jpg" class="swiper-lazy w-full pt-8" />
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/slider/img-1.jpg" class="swiper-lazy w-full pt-8" />
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                    </div>
+                </div>
+                <div class="swiper-button-next text-2xl"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="call_back py-10">
+        <h1 class="text-4xl p-5"><span class="border-b-4 border-b-[#11e6f4]">RE</span>QUEST A CALL BACK</h1>
+
+        <div class="sm:flex items-center">
+            <div class="input sm:w-5/12 my-5">
+                <div class="mx-5 space-y-5">
+                    <div class="">
+                        <label class="font-bold text-[17px]" for="name">Name</label><br>
+                        <input type="text" id="name" placeholder="Enter Your Name"
+                            class="border-2 focus:ring-2 focus:rounded-sm focus:outline-none w-full px-2 py-1 font-semibold tracking-wide">
+                    </div>
+                    <div class="">
+                        <label class="font-bold text-[17px]" for="email">E-Mail</label><br>
+                        <input type="text" id="email" placeholder="Enter Your E-Mail"
+                            class="border-2 focus:ring-2 focus:rounded-sm focus:outline-none w-full px-2 py-1 font-semibold tracking-wide">
+                    </div>
+                    <div class="">
+                        <label class="font-bold text-[17px]" for="phone">Phone</label><br>
+                        <input type="text" id="phone" placeholder="Enter Your phone"
+                            class="border-2 focus:ring-2 focus:rounded-sm focus:outline-none w-full px-2 py-1 font-semibold tracking-wide">
+                    </div>
+                    <div class="flex flex-col">
+                        <label class="font-bold text-[17px]" for="selected">
+                            Select
+                        </label>
+                        <select class="border p-1.5" name="" id="selected">
+                            <option value="">Select from here</option>
+                            <option value="ca">Canada</option>
+                            <option value="ing">India</option>
+                            <option value="uk">UK</option>
+                            <option value="fn">France</option>
+                        </select>
+                    </div>
+                    <div class="flex flex-col">
+                        <label class="font-bold text-[17px]" for="message">Message</label>
+                        <textarea class="border-2 focus:outline-none focus:ring-2 focus:ring-teal-500 rounded-sm p-1"
+                            name="" id="message" cols="" rows="3"></textarea>
+                    </div>
+                    <div class="">
+                        <button class="bg-black text-white text-lg px-10 py-2 hover:bg-gray-900">Send</button>
+                    </div>
+                </div>
+            </div>
+            <div class="article sm:w-7/12 ">
+                <div class="h-screen flex flex-col justify-center items-center"
+                    style="background-image: url(./images/contact-bg.jpg);">
+                    <h1 class="text-4xl ">Get Now Medicines</h1>
+                    <p class="m-6 sm:w-96 text-lg text-center">There are many variations of passages of Lorem Ipsum
+                        available, but the majority have suffered alteration in some form, by injected humour, or
+                        randomised words which don't look even slightly believable.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer section -->
+    <div class="section_footer text-white bg-zinc-900 px-5 py-16">
+        <footer class="  ">
+            <div class="sm:flex space-y-10">
+                <div class="sm:w-6/12 flex justify-evenly">
+                    <div class="one space-y-3">
+                        <h1 class="uppercase font-bold text-4xl">Contact</h1>
+                        <div class="flex space-x-2">
+                            <img src="./images/telephone-symbol-button.png" alt=""> <span>+00147852369</span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <img src="./images/email.png" alt=""><span>mruman649@mail.com</span>
+                        </div>
+                    </div>
+                    <div class="two">
+                        <h2 class="font-bold text-2xl border-b-2 mb-3">MENU</h2>
+                        <ol class="space-y-2">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Views</a></li>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">about</a></li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="three sm:w-6/12 space-y-2">
+                    <h1 class="text-4xl font-bold ">NEWSLETTER</h1>
+                    <input type="text" class="focus:outline-none p-1 border-2 focus:ring-2 rounded-sm w-full">
+                    <button class="text-2xl px-6 py-2 bg-[#2fe7f1] hover:bg-[#11b5be]">Subscribe</button>
+                </div>
+            </div>
+        </footer>
+        <div class="my-16 text-center">
+            <p class="sm:w-8/12 bg-red-200 mx-auto border-2 border-[#2fe7f1]"></p>
+            <h1 class="text-2xl font-bold ">© 2019 All Rights Reserved. Design by Free Html Templates</h1>
+        </div>
+    </div>
+
+
+    <!-- js file  -->
+    <script type="module" src="./main.js"></script>
+
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            lazy: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+
+</body>
+
+</html>
